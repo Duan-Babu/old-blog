@@ -1,0 +1,800 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>我的博客_Babu Blog</title>
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+    <script src="https://cdn.bootcss.com/limonte-sweetalert2/8.11.8/sweetalert2.min.js"></script>
+    <link href="https://cdn.bootcss.com/limonte-sweetalert2/8.11.8/sweetalert2.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+  </head>
+  <body>
+    <script>
+        function executeExample_test(str){
+            if(str=="微信号"){
+		        Swal.fire('昵称：Babu',
+                '微信号：Babu_2022')
+	        }
+            if(str=="QQ号"){
+		        Swal.fire('昵称：Babu',
+                'QQ号：3552876629')
+	        }
+            if(str=="联系我们"){
+		        Swal.fire('联系我们',
+                '微信昵称：Babu<br>微信号：Babu_2022<br> <br>QQ昵称：Babu<br>QQ号：3552876629')
+	        }
+            if(str=="邮箱地址上传错误"){
+		        Swal.fire({
+		            type: 'error',
+		            title: '邮箱地址上传错误!',
+		            text: '错误代码：201（没有找到服务器）',
+		        })
+                }    
+	    }
+        
+    </script>    
+            
+<!-- header -->
+<header class="w3l-header">
+	<div class="container">
+	<!--/nav-->
+	<nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-sm-3 px-0">
+			<a class="navbar-brand" href="index.html">
+				<span class="fa fa-newspaper-o" ></span> Babu Blog</a>
+			<!-- if logo is image enable this   
+						<a class="navbar-brand" href="#index.html">
+							<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+						</a> -->
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<!-- <span class="navbar-toggler-icon"></span> -->
+				<span class="fa icon-expand fa-bars"></span>
+				<span class="fa icon-close fa-times"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<nav class="mx-auto">
+					<div class="search-bar">
+						<form class="search">
+							<input type="search" class="search__input" name="search" placeholder="在这里搜索文章、博主和文件"
+								onload="equalWidth()" required>
+							<span class="fa fa-search search__icon"></span>
+						</form>
+					</div>
+				</nav>
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">主页</a>
+					</li>
+					<li class="nav-item dropdown @@pages__active">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							更多<span class="fa fa-angle-down"></span>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item @@b__active" href="https://duan-babu.github.io/Study">Babu Study</a>
+						</div>
+					</li>
+					<li class="nav-item @@contact__active">
+						<a class="nav-link" href="javascript:void(0);" onclick="executeExample_test('联系我们')">联系</a>
+					</li>
+				</ul>
+			</div>
+			<!-- toggle switch for light and dark theme -->
+			<div class="mobile-position">
+				<nav class="navigation">
+					<div class="theme-switch-wrapper">
+						<label class="theme-switch" for="checkbox">
+							<input type="checkbox" id="checkbox">
+							<div class="mode-container">
+								<i class="gg-sun"></i>
+								<i class="gg-moon"></i>
+							</div>
+						</label>
+					</div>
+				</nav>
+			</div>
+			<!-- //toggle switch for light and dark theme -->
+		</div>
+	</nav>
+	<!--//nav-->
+</header>
+<!-- //header -->
+<!-- /homeblock1-->
+<section class="w3l-homeblock1 py-sm-5 py-4">
+    <div class="container py-md-4">
+        <div class="grids-area-hny main-cont-wthree-fea row">
+            <div class="col-lg-3 col-6 grids-feature">
+                <a href="StudyFiles.html">
+                    <div class="area-box">
+                        <span class="fa fa-book"></span>
+                        <h4 class="title-head">学习资料</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-6 grids-feature">
+                <a href="Navigation.html">
+                    <div class="area-box">
+                        <span class="fa fa-map"></span>
+                        <h4 class="title-head">网站导航</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-6 grids-feature mt-lg-0 mt-md-4 mt-3">
+                <a href="Food.html">
+                    <div class="area-box">
+                        <span class="fa fa-cutlery"></span>
+                        <h4 class="title-head">美食推荐</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-6 grids-feature mt-lg-0 mt-md-4 mt-3">
+                <a href="Programming.html">
+                    <div class="area-box">
+                        <span class="fa fa-pie-chart"></span>
+                        <h4 class="title-head">编程论坛</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //homeblock1-->
+
+<section class="w3l-testimonials" id="testimonials">
+    <!-- main-slider -->
+    <div class="testimonials pt-2 pb-5">
+        <div class="container pb-lg-5">
+            <div class="owl-testimonial owl-carousel owl-theme mb-md-0 mb-sm-5 mb-4">
+                <div class="item">
+                    <div class="row slider-info">
+                        <div class="col-lg-8 message-info align-self">
+                            <span class="label-blue mb-sm-4 mb-3">资讯</span>
+                            <h3 class="title-big mb-4">北京冬奥精神
+                            </h3>
+                            <p class="message">习近平指出，北京冬奥会、冬残奥会广大参与者珍惜伟大时代赋予的机遇，在冬奥申办、筹办、举办的过程中，共同创造了北京冬奥精神。这个精神是：胸怀大局、自信开放、迎难而上、追求卓越、共创未来。</p>
+                        </div>
+                        <div class="col-lg-4 col-md-8 img-circle mt-lg-0 mt-4">
+                            <img src="assets/images/Dong-Ao-Hui.jpg" class="img-fluid radius-image-full" alt="client image">
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row slider-info">
+                        <div class="col-lg-8 message-info align-self">
+                            <span class="label-blue mb-sm-4 mb-3">今日头条</span>
+                            <h3 class="title-big mb-4">致敬 · 那炎炎夏日“蚊虫王国”里的热血青春
+                            </h3>
+                            <p class="message">刚刚蚊子嗡嗡作响的声音，想必很多人无法忍受。但在新疆科克托海中心边境警务站，有一群平均年龄不到30岁的年轻民警们，就常年驻守在这样的环境下，守护着祖国边防线。科克托海中心边境警务站，就设在新疆阿勒泰地区哈巴河县北湾边境线上，那里挨着额尔齐斯河，周边丛林里有很多河水涨潮时留下来的沼泽死水，成为蚊虫繁衍的天然温床，加上那里常年温差大，冬季...</p>
+                        </div>
+                        <div class="col-lg-4 col-md-8 img-circle mt-lg-0 mt-4">
+                            <img src="assets/images/Bian-Fang-Zhan-Shi.jpg" class="img-fluid radius-image-full" alt="client image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /main-slider -->
+</section>
+<div class="w3l-homeblock2 py-5">
+    <div class="container py-lg-5 py-md-4">
+        <!-- block -->
+        <div class="row">
+            <div class="col-lg-8">
+                <h3 class="section-title-left mb-4">今日文章</h3>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 item">
+                        <div class="card">
+                            <div class="card-header p-0 position-relative">
+                                <a href="#blog-single.html">
+                                    <img class="card-img-bottom d-block radius-image-full"
+                                        src="assets/images/WenZhang_L.jpg" alt="Card image cap">
+                                </a>
+                            </div>
+                            <div class="card-body blog-details">
+                                <span class="label-blue">文章</span> <span class="label-red">原创</span><br>
+                                <a href="#blog-single.html" class="blog-desc">儿时的回忆<br>
+                                    ——读《朝花夕拾》有感
+                                    
+                                </a>
+                                <p>“三味书屋后面也有一个园，虽然小，但在那里也可以爬上花坛去折蜡梅花，在地上或桂花树上寻蝉蜕。最好的工作是捉了苍蝇喂蚂蚁，静悄悄地没有声音……”这是鲁迅先生写在《从百草园到三味书屋》的几句话。读着读着，勾起了我儿时的回...
+                                </p>
+                                <div class="author align-items-center mt-3 mb-1">
+                                    <img src="http://q1.qlogo.cn/g?b=qq&nk=3552876629&s=640" alt="" class="img-fluid rounded-circle" />
+                                    <ul class="blog-meta">
+                                        <li>
+                                            <a href="author.html">Babu</a> </a>
+                                        </li>
+                                        <li class="meta-item blog-lesson">
+                                            <span class="meta-value"> Today </span><span
+                                                class="meta-value ml-2"><span class="fa fa-clock-o"></span> 最近发布</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 mt-md-0 mt-sm-5 mt-4">
+                        <div class="card">
+                            <div class="card-header p-0 position-relative">
+                                <a href="#blog-single.html">
+                                    <img class="card-img-bottom d-block radius-image-full"
+                                        src="assets/images/WenZhang_L.jpg" alt="Card image cap">
+                                </a>
+                            </div>
+                            <div class="card-body blog-details">
+                                <span class="label-blue">文章</span> <span class="label-red">原创</span><br>
+                                <a href="#blog-single.html" class="blog-desc" style="font-size: 0.49cm;">猪八戒——集猪性、人性、神性于一体<br>
+                                    ——《西游记》人物评析
+                                    
+                                </a>
+                                <p>俗话说的好：“猪八戒照镜子——里外不是人”，在人们的印象中，猪八戒一直是一个胖乎乎的肥猪，好吃懒做，还贪恋美色，一个“猪首人身”的样子，让人看到止不住哈哈大笑。但他在关键时刻，依旧憨厚勇敢地与妖怪作战，是孙悟空的得力助手...</p>
+                                <div class="author align-items-center mt-3 mb-1">
+                                    <img src="http://q1.qlogo.cn/g?b=qq&nk=3552876629&s=640" alt="" class="img-fluid rounded-circle" />
+                                    <ul class="blog-meta">
+                                        <li>
+                                            <a href="author.html">Babu</a> </a>
+                                        </li>
+                                        <li class="meta-item blog-lesson">
+                                            <span class="meta-value"> Today </span><span
+                                                class="meta-value ml-2"><span class="fa fa-clock-o"></span> 最近发布</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 left-right bg-clr-white p-3">
+                    <h3 class="section-title-left align-self pl-2 mb-sm-0 mb-3">与我们一起做广告 </h3>
+                    <a class="btn btn-style btn-primary" href="#url">了解更多</a>
+                </div>
+            </div>
+            <div class="col-lg-4 trending mt-lg-0 mt-5">
+                <div class="topics">
+                    <h3 class="section-title-left mb-4">主题</h3>
+                    <a href="StudyFiles.html" class="topics-list">
+                        <div class="list1">
+                            <span class="fa fa-book"></span>
+                            <h4>学习资料</h4>
+                        </div>
+                    </a>
+                    <a href="Navigation.html" class="topics-list mt-3">
+                        <div class="list1">
+                            <span class="fa fa-map"></span>
+                            <h4>网址导航</h4>
+                        </div>
+                    </a>
+                    <a href="Food.html" class="topics-list mt-3">
+                        <div class="list1">
+                            <span class="fa fa-cutlery"></span>
+                            <h4>美食推荐</h4>
+                        </div>
+                    </a>
+                    <a href="Programming.html" class="topics-list mt-3">
+                        <div class="list1">
+                            <span class="fa fa-pie-chart"></span>
+                            <h4>编程论坛</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="sponsers mt-5">
+                    <h3 class="section-title-left mb-4">我们的广告位</h3>
+                    <a href="#ad-banner"><img src="assets/images/ad.jpg" alt="" class="img-fluid radius-image-full" /></a>
+                    <a href="#advertise" class="text-center d-block text-uppercase">与我们一起做广告</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="w3l-homeblock3 py-5">
+    <div class="container py-lg-5 py-md-4">
+        <h3 class="section-title-left mb-4">本月精选</h3>
+        <div class="row top-pics">
+            <div class="col-lg-4 col-md-6">
+                <div class="top-pic1">
+                    <div class="card-body blog-details">
+                        <a href="#blog-single.html" class="blog-desc">Fashion is
+                            Creating your Beauty image. The New fashion starts here
+                        </a>
+                        <div class="author align-items-center">
+                            <img src="assets/images/a1.jpg" alt="" class="img-fluid rounded-circle" />
+                            <ul class="blog-meta">
+                                <li>
+                                    <a href="author.html">Isabella ava</a> </a>
+                                </li>
+                                <li class="meta-item blog-lesson">
+                                    <span class="meta-value"> July 13, 2020 </span>. <span
+                                        class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+                <div class="top-pic2">
+                    <div class="card-body blog-details">
+                        <a href="#blog-single.html" class="blog-desc">The 5 Nonnegotiables of a Healthy Quarantine food that a Doctor Approved
+                        </a>
+                        <div class="author align-items-center">
+                            <img src="assets/images/a2.jpg" alt="" class="img-fluid rounded-circle" />
+                            <ul class="blog-meta">
+                                <li>
+                                    <a href="author.html">Charlotte mia</a> </a>
+                                </li>
+                                <li class="meta-item blog-lesson">
+                                    <span class="meta-value"> July 13, 2020 </span>. <span
+                                        class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-lg-0 mt-4">
+                <div class="top-pic3">
+                    <div class="card-body blog-details">
+                        <a href="#blog-single.html" class="blog-desc"> Right food baked with natural ingredient, the use of best quality products
+                        </a>
+                        <div class="author align-items-center">
+                            <img src="assets/images/a3.jpg" alt="" class="img-fluid rounded-circle" />
+                            <ul class="blog-meta">
+                                <li>
+                                    <a href="author.html">Elizabeth</a> </a>
+                                </li>
+                                <li class="meta-item blog-lesson">
+                                    <span class="meta-value"> July 13, 2020 </span>. <span
+                                        class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="w3l-homeblock2 py-5">
+    <div class="container py-lg-5 py-md-4">
+        <!-- block -->
+        <div class="left-right">
+            <h3 class="section-title-left mb-sm-4 mb-2"> Fashion and style</h3>
+            <a href="fashiom.html" class="more btn btn-small mb-sm-0 mb-4">View more</a>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 item">
+                <div class="card">
+                    <div class="card-header p-0 position-relative">
+                        <a href="#blog-single.html">
+                            <img class="card-img-bottom d-block radius-image-full" src="assets/images/fashion1.jpg"
+                                alt="Card image cap">
+                        </a>
+                    </div>
+                    <div class="card-body blog-details">
+                        <a href="#blog-single.html" class="blog-desc">An easy Guide to buying Denim & My favourite styles
+                        </a>
+                        <div class="author align-items-center">
+                            <img src="assets/images/a1.jpg" alt="" class="img-fluid rounded-circle" />
+                            <ul class="blog-meta">
+                                <li>
+                                    <a href="author.html">Isabella ava</a> </a>
+                                </li>
+                                <li class="meta-item blog-lesson">
+                                    <span class="meta-value"> July 13, 2020 </span>. <span
+                                        class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+                <div class="card">
+                    <div class="card-header p-0 position-relative">
+                        <a href="#blog-single.html">
+                            <img class="card-img-bottom d-block radius-image-full" src="assets/images/fashion2.jpg"
+                                alt="Card image cap">
+                        </a>
+                    </div>
+                    <div class="card-body blog-details">
+                        <a href="#blog-single.html" class="blog-desc">The Satin Skirt & How to Wear it all year round fashion
+                        </a>
+                        <div class="author align-items-center">
+                            <img src="assets/images/a2.jpg" alt="" class="img-fluid rounded-circle" />
+                            <ul class="blog-meta">
+                                <li>
+                                    <a href="author.html">Charlotte mia</a> </a>
+                                </li>
+                                <li class="meta-item blog-lesson">
+                                    <span class="meta-value"> July 13, 2020 </span>. <span
+                                        class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+                <div class="card">
+                    <div class="card-header p-0 position-relative">
+                        <a href="#blog-single.html">
+                            <img class="card-img-bottom d-block radius-image-full" src="assets/images/fashion3.jpg"
+                                alt="Card image cap">
+                        </a>
+                    </div>
+                    <div class="card-body blog-details">
+                        <a href="#blog-single.html" class="blog-desc">What I’ll be Wearing this Party Season & the Festive edit
+                        </a>
+                        <div class="author align-items-center">
+                            <img src="assets/images/a3.jpg" alt="" class="img-fluid rounded-circle" />
+                            <ul class="blog-meta">
+                                <li>
+                                    <a href="author.html">Elizabeth</a> </a>
+                                </li>
+                                <li class="meta-item blog-lesson">
+                                    <span class="meta-value"> July 13, 2020 </span>. <span
+                                        class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="w3l-homeblock2 w3l-homeblock5 py-5">
+    <div class="container py-lg-5 py-md-4">
+        <!-- block -->
+        <div class="left-right">
+            <h3 class="section-title-left mb-sm-4 mb-2">学习资料</h3>
+            <a href="StudyFiles.html" class="more btn btn-small mb-sm-0 mb-4">查看更多</a>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="bg-clr-white hover-box">
+                    <div class="row">
+                        <div class="col-sm-5 position-relative">
+                            <a href="#blog-single.html" class="image-mobile">
+                                <img class="card-img-bottom d-block radius-image-full" src="assets/images/PDF_L.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="col-sm-7 card-body blog-details align-self">
+                            <a href="#blog-single.html" class="blog-desc"><span class="label-red">原创</span><br><br>七下 - 道德与法治提纲.pdf
+                            </a>
+                            <div class="author align-items-center">
+                                <img src="http://q1.qlogo.cn/g?b=qq&nk=3552876629&s=640" alt="User" class="img-fluid rounded-circle" />
+                                <ul class="blog-meta">
+                                    <li>
+                                        <a href="author.html">Babu</a> </a>
+                                    </li>
+                                    <li class="meta-item blog-lesson">
+                                        <span class="meta-value"> July 16, 2022 </span>. <span
+                                            class="meta-value ml-2"><span class="fa fa-clock-o"></span> 最近更新</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-lg-0 mt-4">
+                <div class="bg-clr-white hover-box">
+                    <div class="row">
+                        <div class="col-sm-5 position-relative">
+                            <a href="#blog-single.html" class="image-mobile">
+                                <img class="card-img-bottom d-block radius-image-full" src="assets/images/PDF_L.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="col-sm-7 card-body blog-details align-self">
+                            <a href="#blog-single.html" class="blog-desc"><span class="label-red">原创</span><br><br>七下 - 英语不规则...形表.pdf
+                            </a>
+                            <div class="author align-items-center">
+                                <img src="http://q1.qlogo.cn/g?b=qq&nk=3552876629&s=640" alt="User" class="img-fluid rounded-circle" />
+                                <ul class="blog-meta">
+                                    <li>
+                                        <a href="author.html">Babu</a> </a>
+                                    </li>
+                                    <li class="meta-item blog-lesson">
+                                        <span class="meta-value"> July 16, 2022 </span>. <span
+                                            class="meta-value ml-2"><span class="fa fa-clock-o"></span> 最近更新</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-4">
+                <div class="bg-clr-white hover-box">
+                    <div class="row">
+                        <div class="col-sm-5 position-relative">
+                            <a href="#blog-single.html" class="image-mobile">
+                                <img class="card-img-bottom d-block radius-image-full" src="assets/images/PDF_L.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="col-sm-7 card-body blog-details align-self">
+                            <a href="#blog-single.html" class="blog-desc"><span class="label-red">原创</span><br><br>七上 - 道德与法治提纲.pdf
+                            </a>
+                            <div class="author align-items-center">
+                                <img src="http://q1.qlogo.cn/g?b=qq&nk=3552876629&s=640" alt="User" class="img-fluid rounded-circle" />
+                                <ul class="blog-meta">
+                                    <li>
+                                        <a href="author.html">Babu</a> </a>
+                                    </li>
+                                    <li class="meta-item blog-lesson">
+                                        <span class="meta-value"> July 16, 2022 </span>. <span
+                                            class="meta-value ml-2"><span class="fa fa-clock-o"></span> 最近更新</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-4">
+                <div class="bg-clr-white hover-box">
+                    <div class="row">
+                        <div class="col-sm-5 position-relative">
+                            <a href="#blog-single.html" class="image-mobile">
+                                <img class="card-img-bottom d-block radius-image-full" src="assets/images/PDF_L.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="col-sm-7 card-body blog-details align-self">
+                            <a href="#blog-single.html" class="blog-desc"><span class="label-gray">转载</span><br><br><svg t="1657982668147" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="16706" width="30" height="30"><path d="M512 12.487805c274.731707 0 499.512195 224.780488 499.512195 499.512195s-224.780488 499.512195-499.512195 499.512195-499.512195-224.780488-499.512195-499.512195 224.780488-499.512195 499.512195-499.512195z" fill="#4A79F2" p-id="16707"></path><path d="M703.013463 683.257756c-4.370732-4.395707-10.989268-6.593561-17.557853-6.593561H336.346537c-6.593561 0-13.162146 2.197854-17.557854 8.791415-4.395707 2.197854-6.593561 8.791415-6.593561 15.36v10.989268h399.609756v-10.989268c0-6.568585-2.197854-13.162146-8.791415-17.557854z m-228.327024-37.313561c2.172878 4.370732 4.370732 6.568585 8.766439 6.568585 4.395707 2.197854 6.593561 2.197854 10.989268 2.197854h4.395708v-116.361366h26.349268v114.163512c4.370732 0 6.568585-2.197854 10.989268-4.370731l6.568586-6.593561 127.350634-175.653464c6.568585-4.395707 8.766439-13.187122 6.568585-21.978536l-43.907122-114.138537c-2.197854-4.420683-6.593561-8.791415-10.989268-13.187122-2.172878-2.197854-8.766439-4.395707-13.162146-4.395707h-195.409171c-4.395707 0-8.791415 2.197854-13.162147 4.395707-4.395707 2.197854-6.593561 6.593561-8.791414 10.989269l-46.104976 116.361365c-2.197854 4.395707-2.197854 8.766439-2.197853 13.162147 0 4.395707 2.197854 8.791415 4.395707 13.187122l127.350634 175.653463z m39.511415-276.654829c30.72 0 57.094244 26.349268 57.094244 57.069268 0 15.384976-6.593561 28.547122-17.58283 39.53639-10.989268 10.989268-26.349268 17.557854-41.709268 17.557854-30.72 0-57.094244-26.349268-57.094244-57.094244 2.197854-30.72 26.349268-57.069268 59.292098-57.069268z" fill="#FFFFFF" p-id="16708"></path></svg> 2021学年第二学期鄞....pdf
+                            </a>
+                            <div class="author align-items-center">
+                                <img src="http://q1.qlogo.cn/g?b=qq&nk=3552876629&s=640" alt="User" class="img-fluid rounded-circle" />
+                                <ul class="blog-meta">
+                                    <li>
+                                        <a href="author.html">Babu</a> </a>
+                                    </li>
+                                    <li class="meta-item blog-lesson">
+                                        <span class="meta-value"> July 16, 2022 </span>. <span
+                                            class="meta-value ml-2"><span class="fa fa-clock-o"></span> 最近更新</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="w3l-homeblock2 w3l-homeblock6 py-5">
+    <div class="container-fluid px-sm-5 py-lg-5 py-md-4">
+        <!-- block -->
+            <h3 class="section-title-left mb-4">实时动态</h3>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="bg-clr-white hover-box">
+                    <div class="row">
+                        <div class="col-sm-6 position-relative">
+                            <a href="#blog-single.html">
+                                <img class="card-img-bottom d-block radius-image-full" src="assets/images/trending1.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 card-body blog-details align-self">
+                            <span class="label-blue">学习</span>
+                            <a href="#blog-single.html" class="blog-desc">Playing footbal with your feet is one thing.
+                            </a>
+                            <p>Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit. Quis
+                                vitae sit.</p>
+                            <div class="author align-items-center mt-3">
+                                <img src="http://q1.qlogo.cn/g?b=qq&nk=3552876629&s=640" alt="" class="img-fluid rounded-circle" />
+                                <ul class="blog-meta">
+                                    <li>
+                                        <a href="author.html">Babu</a> </a>
+                                    </li>
+                                    <li class="meta-item blog-lesson">
+                                        <span class="meta-value"> July 16, 2022 </span>. <span
+                                            class="meta-value ml-2"><span class="fa fa-clock-o"></span> 最近发布</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-lg-0 mt-4">
+                <div class="bg-clr-white hover-box">
+                    <div class="row">
+                        <div class="col-sm-6 position-relative">
+                            <a href="#blog-single.html">
+                                <img class="card-img-bottom d-block radius-image-full" src="assets/images/trending2.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 card-body blog-details align-self">
+                            <span class="label-blue">Fitness</span>
+                            <a href="#blog-single.html" class="blog-desc">Experience the state of the art fitness! Fitness on Track </a>
+                            <p>Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit. Quis
+                                vitae sit.</p>
+                            <div class="author align-items-center mt-3">
+                                <img src="assets/images/a3.jpg" alt="" class="img-fluid rounded-circle" />
+                                <ul class="blog-meta">
+                                    <li>
+                                        <a href="author.html">ELizabeth</a> </a>
+                                    </li>
+                                    <li class="meta-item blog-lesson">
+                                        <span class="meta-value"> July 13, 2020 </span>. <span
+                                            class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="w3l-subscribe py-5">
+    <div class="container py-lg-5 py-md-4">
+        <div class="w3l-subscribe-content text-center bg-clr-white py-md-5 py-2">
+            <div class="py-5">
+                <h3 class="section-title-left mb-2">订阅我们的网站吧！</h3>
+                <p class="mb-md-5 mb-4">填写你的邮箱，我们将发送每月文件至您的邮箱内</p>
+                <form action="#" method="GET" class="subscribe">
+                    <input type="email" class="subscribe_input" name="search" placeholder="电子邮箱地址" required="">
+                    <button class="btn btn-style btn-primary" onclick="executeExample_test('邮箱地址上传错误')">发送</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer-28 block -->
+<section class="app-footer">
+  <footer class="footer-28 py-5">
+    <div class="footer-bg-layer">
+      <div class="container py-lg-3">
+        <div class="row footer-top-28">
+          <div class="col-lg-4 footer-list-28 copy-right mb-lg-0 mb-sm-5 mt-sm-0 mt-4">
+            <a class="navbar-brand mb-3" href="index.html">
+              <span class="fa fa-newspaper-o"></span>Babu Blog</a>
+            <p class="copy-footer-28"> © 2022. All Rights Reserved. </p>
+            <h5 class="mt-2">Design by <a href="https://w3layouts.com/">W3Layouts</a></h5>
+          </div>
+          <div class="col-lg-8 row">
+            <div class="col-sm-4 col-6 footer-list-28">
+              <h6 class="footer-title-28">合作伙伴</h6>
+              <ul>
+                <li><a href="https://pc.woozooo.com/">
+                    <img height="20" width="20" src="https://pc.woozooo.com/favicon.ico"></img> 蓝奏云网盘</a></li>
+                <li><a href="https://www.iconfont.cn/">
+                    <img height="20" width="20" src="https://img.alicdn.com/imgextra/i2/O1CN01ZyAlrn1MwaMhqz36G_!!6000000001499-73-tps-64-64.ico"></img> 阿里巴巴矢量图标库</a></li>
+                <li><a href="https://www.sweetalert2.cn/">
+                    <img height="20" width="100" src="https://www.sweetalert2.cn/images/SweetAlert2.png"></img></a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-6 footer-list-28">
+              <h6 class="footer-title-28">网站分类</h6>
+              <ul>
+                <li><a href="StudyFiles.html">#学习资料</a></li>
+                <li><a href="Navigation.html">#网址导航</a></li>
+                <li><a href="Food.html">#美食推荐</a></li>
+                <li><a href="Programming.html">#编程论坛</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-6 footer-list-28 mt-sm-0 mt-4">
+              <h6 class="footer-title-28">社交帐号</h6>
+              <ul class="social-icons">
+                <li class="QQ">
+                  <a href="javascript:void(0);" onclick="executeExample_test('QQ号')"><span class="fa fa-qq"></span> QQ</a></li>
+                <li class="Wechat"> 
+                  <a href="javascript:void(0);" onclick="executeExample_test('微信号')"><span class="fa fa-wechat"></span> 微信</a></li>
+                <li class="Bilibili">
+                  <a href="https://space.bilibili.com/649828032"><svg t="1657959065159" class="icon" viewBox="0 0 2299 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2269" width="50" height="50"><path d="M1775.840814 322.588002c6.0164 1.002733 53.144869-9.525967 55.150336-6.016401 3.0082 4.5123 24.065601 155.92504 18.550567 156.927774s-44.621635 10.027334-44.621635 10.027334c-3.0082-20.556034-28.577901-147.903173-29.079268-160.938707m75.205003-14.539634l20.556034 162.944174c10.5287-0.501367 53.144869-3.509567 57.155803-4.010934-6.0164-61.668103-16.545101-158.933241-16.545101-158.93324-20.054668-4.010934-41.112069-4.010934-61.166736 0m-40.610702 226.116376s92.752838-23.564234 126.344406-12.0328c17.046467 61.668103 48.131202 407.611118 51.139402 421.649386-21.057401 2.506833-90.246004 8.523234-95.761037 10.027333-4.5123-26.071068-81.72277-403.098818-81.722771-419.643919m343.436183-207.565809c5.515034 1.5041 54.648969-5.013667 55.150335-1.5041 1.002733 12.032801 6.0164 157.42914 0.501367 157.930507s-44.621635 4.010934-44.621635 4.010934c-1.002733-20.054668-12.032801-146.90044-11.030067-160.437341m75.70637-4.010933l4.010933 160.938707c10.5287 0 52.643502 2.506833 57.155803 2.005467-1.002733-61.668103 0-158.933241 0-158.933241-20.054668-3.509567-40.610702-5.013667-61.166736-4.010933m-64.676303 216.089043s94.758304-12.534167 126.845772 2.506833c7.019134 72.196803 6.0164 408.613852 7.019134 422.652119-21.558768 0-90.246004 1.002733-95.761038 2.005467-1.002733-26.071068-39.607968-410.619319-38.103868-427.164419m-220.099977-413.627519c54.648969 278.759879 96.262404 755.058234 97.766504 785.641602 0 0 43.117535 1.002733 91.750105 4.010934C2105.740095 614.383415 2070.644427 134.575493 2071.145794 119.033126c-12.032801-13.536901-126.344406 6.0164-126.344406 6.0164m-120.328005 659.297196c-10.5287-78.213204-290.291313-166.955108-447.720454-138.377206 0 0-19.553301-172.470141-27.073801-339.425248-6.517767-143.390873-1.002733-282.770813 0.501366-305.833681-10.5287-7.5205-123.837572 46.627102-185.004308 69.188603 0 0 73.199537 309.844614 126.344406 952.59671 0 0 84.730971 9.0246 230.12731-19.051934s317.365114-115.815705 302.825481-219.097244m-341.932083 140.88404l-24.566967-176.982441c6.0164-3.0082 156.927774 53.144869 172.971507 63.172203-2.506833 11.030067-148.40454 113.810238-148.40454 113.810238M610.664628 322.588002c6.0164 1.002733 53.144869-9.525967 55.150335-6.016401 3.0082 4.5123 24.065601 155.92504 18.550568 156.927774s-44.621635 10.027334-44.621635 10.027334c-3.0082-20.556034-28.577901-147.903173-29.079268-160.938707m75.205003-14.539634l20.556034 162.944174c10.5287-0.501367 53.144869-3.509567 57.155803-4.010934-6.517767-61.668103-16.545101-158.933241-16.545101-158.93324-20.054668-4.010934-41.112069-4.010934-61.166736 0m-40.610702 226.116376s92.752838-23.564234 126.344406-12.0328c17.046467 61.668103 48.131202 407.611118 51.139402 421.649386-21.057401 2.506833-90.246004 8.523234-95.761037 10.027333-4.5123-26.071068-81.72277-403.098818-81.722771-419.643919m343.436182-207.565809c5.515034 1.5041 54.648969-5.013667 55.150336-1.5041 1.002733 12.032801 6.0164 157.42914 0.501367 157.930507s-44.621635 4.010934-44.621635 4.010934c-1.002733-20.054668-11.531434-146.90044-11.030068-160.437341m75.706371-4.010933l4.010933 160.938707c10.5287 0 52.643502 2.506833 57.155803 2.005467-1.002733-61.668103 0-158.933241 0-158.933241-20.054668-3.509567-40.610702-4.5123-61.166736-4.010933m-64.676303 216.089043s94.758304-12.534167 126.845772 2.506833c7.019134 72.196803 6.0164 408.613852 7.019134 422.652119-21.558768 0-90.246004 1.002733-95.761038 2.005467-0.501367-26.071068-39.607968-410.619319-38.103868-427.164419m-220.099977-413.627519c54.648969 278.759879 96.262404 755.058234 97.766504 785.641602 0 0 43.117535 1.002733 91.750105 4.010934-28.577901-300.318647-63.67357-780.126569-63.172203-796.170303-12.032801-13.035534-126.344406 6.517767-126.344406 6.517767m-120.328005 659.297196c-10.5287-78.213204-290.291313-166.955108-447.720454-138.377206 0 0-19.553301-172.470141-27.073801-339.425248-6.517767-143.390873-1.002733-282.770813 0.501366-305.833681C174.475608-6.308547 61.166736 47.337689 0 69.89919c0 0 73.199537 309.844614 126.344406 952.59671 0 0 84.730971 9.0246 230.12731-19.051934s317.365114-115.815705 302.825481-219.097244m-341.932083 140.88404l-24.566967-176.982441c6.0164-3.0082 156.927774 53.144869 172.971507 63.172203-2.506833 11.030067-148.40454 113.810238-148.40454 113.810238" p-id="2270" fill="#1296db"></path></svg></a>
+                <li class="Github">
+                  <a href="https://github.com/Duan-Babu"><svg t="1657959357940" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5234" width="20" height="20"><path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9 23.5 23.2 38.1 55.4 38.1 91v112.5c0.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z" p-id="5235" fill="#515151"></path></svg> Github</a>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+  <!-- move top -->
+  <button onclick="topFunction()" id="movetop" title="Go to top">
+    <span class="fa fa-angle-up"></span>
+  </button>
+  <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("movetop").style.display = "block";
+      } else {
+        document.getElementById("movetop").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <!-- /move top -->
+</section>
+<!-- //footer-28 block -->
+
+<!-- disable body scroll which navbar is in active -->
+<script>
+  $(function () {
+    $('.navbar-toggler').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+<!-- disable body scroll which navbar is in active -->
+
+<!-- Template JavaScript -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+
+<!-- theme changer js -->
+<script src="assets/js/theme-change.js"></script>
+<!-- //theme changer js -->
+
+<!-- courses owlcarousel -->
+<script src="assets/js/owl.carousel.js"></script>
+
+<!-- script for testimonials -->
+<script>
+  $(document).ready(function () {
+    $('.owl-testimonial').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      responsiveClass: true,
+      autoplay: false,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        480: {
+          items: 1,
+          nav: false
+        },
+        667: {
+          items: 1,
+          nav: true
+        },
+        1000: {
+          items: 1,
+          nav: true
+        }
+      }
+    })
+  })
+</script>
+<!-- //script for testimonials -->
+
+<!-- bootstrap -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
