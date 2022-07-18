@@ -9733,10 +9733,19 @@ p.white {
   background-color: #fff;
   color: var(--primary-color); }
 
+span.label-AD {
+    color: #696969;
+    display: inline-block;
+    background: rgba(90, 103, 216, 0.05);
+    padding: 5px 20px;
+    font-family: "OPPO常规";
+    border-radius: var(--border-radius-full);
+    font-weight: 600; }
+  
 span.label-blue {
   color: var(--primary-color);
   display: inline-block;
-  background: rgba(90, 103, 216, 0.05);
+  background: rgba(105,105,105,0.05);
   padding: 5px 20px;
   font-family: "OPPO常规";
   border-radius: var(--border-radius-full);
@@ -10209,7 +10218,7 @@ input:checked + .mode-container i.gg-moon {
   .w3l-homeblock1 .grids-area-hny.main-cont-wthree-fea.row .col-6 {
     padding: 0 6px; } }
 
-.w3l-testimonials . {
+.w3l-testimonials{
   font-size: 18px;
   line-height: 28px;
   color: var(--font-color); }
@@ -10503,7 +10512,7 @@ input:checked + .mode-container i.gg-moon {
 .w3l-homeblock3 {
   background: var(--bg-color); }
   .w3l-homeblock3 .top-pic1 {
-    background: url(../images/pic1.jpg) no-repeat 0px 0px;
+    background: url(../images/You-Men-Sun.jpg) no-repeat 0px 0px;
     background-size: cover;
     padding: 20px;
     border-radius: var(--border-radius-full);
